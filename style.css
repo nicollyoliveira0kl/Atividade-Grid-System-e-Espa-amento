@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #faf7f2;
+  color: #4a3b32;
+  margin: 20px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 16px;
+  max-width: 960px;
+  margin: 0 auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.grid-container > div,
+.grid-container > header,
+.grid-container > aside,
+.grid-container > main,
+.grid-container > footer {
+  background: #ffffff;
+  padding: 24px;
+  border-radius: 12px;
+  border: 1px solid #f0e6dd;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
+}
+
+/* Classes utilitárias do Grid */
+.col-12 { grid-column: span 12; }
+.col-9  { grid-column: span 9; }
+.col-3  { grid-column: span 3; }
+
+/* Estilos visuais fofos */
+header {
+  text-align: center;
+  background-color: #fdf6ec !important;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  color: #8c5847;
+}
+
+aside h3, main h2 {
+  margin-top: 0;
+  color: #8c5847;
+}
+
+aside ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  line-height: 1.8;
+  font-size: 0.95rem;
+}
+
+aside li {
+  padding: 6px 0;
+  border-bottom: 1px dashed #e8dcd2;
+}
+
+main p {
+  line-height: 1.6;
+  color: #5c4d44;
+}
+
+.tag {
+  display: inline-block;
+  background: #f3e5d8;
+  color: #724738;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #998377;
+}
